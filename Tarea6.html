@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VENTAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="Tarea6.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">EMPLEADO DEL MES</h1>
+    <div class="table-responsive">
+      <table class="table">
+        <caption class="text-center">Tabla de ventas</caption>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Juana</th>
+            <th>Total Juana $</th>
+            <th>Pedro</th>
+            <th>Total Pedro $</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aqua</td>
+            <td>200$</td>
+            <td><input type="number" class="form-control custom-input juana-input" placeholder="Cantidad vendida"
+                oninput="calcularSumaProductosVendidos()"></td>
+            <td><span class="totalJuana"></span></td>
+            <td><input type="number" class="form-control custom-input pedro-input" placeholder="Cantidad vendida"
+                oninput="calcularSumaProductosVendidos()"></td>
+            <td><span class="totalPedro"></span></td>
+          </tr>
+          <tr>
+            <td>Emoción</td>
+            <td>180$</td>
+            <td><input type="number" class="form-control custom-input juana-input" placeholder="Cantidad vendida"
+                oninput="calcularSumaProductosVendidos()"></td>
+            <td><span class="totalJuana"></span></td>
+            <td><input type="number" class="form-control custom-input pedro-input" placeholder="Cantidad vendida"
+                oninput="calcularSumaProductosVendidos()"></td>
+            <td><span class="totalPedro"></span></td>
+          </tr>
+          <tr>
+            <td>Alegria</td>
+            <td>160$</td>
+            <td><input type="number" class="form-control custom-input juana-input" placeholder="Cantidad vendida"
+                oninput="calcularSumaProductosVendidos()"></td>
+            <td><span class="totalJuana"></span></td>
+            <td><input type="number" class="form-control custom-input pedro-input" placeholder="Cantidad vendida"
+                oninput="calcularSumaProductosVendidos()"></td>
+            <td><span class="totalPedro"></span></td>
+          </tr>
+          <tr>
+            <td>Frescura</td>
+            <td>150$</td>
+            <td><input type="number" class="form-control custom-input juana-input" placeholder="Cantidad vendida"
+                oninput="calcularSumaProductosVendidos()"></td>
+            <td><span class="totalJuana"></span></td>
+            <td><input type="number" class="form-control custom-input pedro-input" placeholder="Cantidad vendida"
+                oninput="calcularSumaProductosVendidos()"></td>
+            <td><span class="totalPedro"></span></td>
+          </tr>
+          <tr class="table-info">
+            <td>Suma de Productos Vendidos</td>
+            <td></td>
+            <td><span class="SumatotalJuana"></span></td>
+            <td></td>
+            <td> <span class="SumatotalPedro"></span></td>
+            <td></td>
+          </tr>
+          <tr class="table-info">
+            <td>Ganancia Total</td>
+            <td></td>
+            <td></td>
+            <td><span class="totalJuanaG"></span></td>
+            <td></td>
+            <td><span class="totalPedroG"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="d-grid gap-2">
+      <button id="calcularBotonGanador" class="btn btn-primary" onclick="calcularBotonGanador()"> Calcular Suma y
+        Empleado del Mes</button>
+      <button id="calcularBotonGanancias" class="btn btn-primary" onclick="calcularBotonGanancias()">Calcular
+        Ganancias</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="Tarea6.js"></script>
+</body>
+
+</html>
